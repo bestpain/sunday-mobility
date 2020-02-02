@@ -34,7 +34,6 @@ app.post('/addEmp',(req,res)=>{
 	})
 });
 
-//view all todo
 app.get('/getEmp',(req,res)=>{
 	const SELECT_EMP='select * from employee';
 	connection.query(SELECT_EMP,(err,results)=>{
